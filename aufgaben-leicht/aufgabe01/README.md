@@ -7,7 +7,7 @@
 ## Leichtes Login system
 
 Im Terminal soll man (wenn man das Programm ausführt) als erstes einen Username angeben (Bspw. root)
-und danach ein Password. Wenn das zusammenpasst wird eine Nachricht mit: "Du bist nun eingeloggt geschickt.
+und danach ein Password. Wenn das zusammenpasst wird eine Nachricht mit: "Du bist nun eingeloggt" geschickt.
 
 Musterlösungen:
 - Noch keine Vorhanden
