@@ -10,4 +10,4 @@ Im Terminal soll man (wenn man das Programm ausführt) als erstes einen Username
 und danach ein Password. Wenn das zusammenpasst wird eine Nachricht mit: "Du bist nun eingeloggt" geschickt.
 
 Musterlösungen:
-- [Python](loesungen/python.py)
+- [Python](loesungen/python/1.py)
