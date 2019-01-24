@@ -10,7 +10,7 @@ Im Terminal soll man (wenn man das Programm ausführt) als erstes einen Username
 
 Voraussetzungen:
 - Für das Beispiel gibt es den Nutzer `root` mit dem Passwort `rootpw`
-- Es muss generell möglich seien, dass sich mehere User mit ihren Passwörtern anmelden können
+- Es muss generell möglich seien, dass sich mehrere User mit ihren Passwörtern anmelden können
 
 ---
 
