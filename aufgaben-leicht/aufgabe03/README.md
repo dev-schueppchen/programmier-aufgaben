@@ -8,7 +8,7 @@
 Der Benutzer bekommt nacheinander verschiedene Fragen gestellt, zu denen er eine richtige Antwort geben muss.
 Für jede richtige Antwort gibt es einen Punkt.
 
-# Zusatzaufgaben:
+### Zusatzaufgaben:
 
 - Nach x Fehlversuchen bekommt man Antwortmöglichkeiten vorgegeben.
 - Die Fragen werden aus einer Datei geladen, jeder kann neue hinzufügen.
