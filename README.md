@@ -7,6 +7,7 @@
 ## Inhalt:
 - [**Leicht**](aufgaben-leicht/)
   - [Login](aufgaben-leicht/aufgabe01)
+  - [Zahlen raten](aufgaben-leicht/aufgabe02)
 - [**Mittel**](aufgaben-mittel/)
   - Noch keine Vorhanden
 - [**Schwer**](aufgaben-schwer/)
