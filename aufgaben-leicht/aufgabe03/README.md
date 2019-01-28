@@ -1,7 +1,6 @@
 # Aufgabe 03
 > Contributors: Ron31#2338
 > Letzte Aktualisierung:  2019/01/28
-
 ---
 
 ## Trivia Quiz
