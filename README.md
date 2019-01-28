@@ -8,6 +8,7 @@
 - [**Leicht**](aufgaben-leicht/)
   - [Login](aufgaben-leicht/aufgabe01)
   - [Zahlen raten](aufgaben-leicht/aufgabe02)
+  - [Trivia-Quiz](aufgaben-leicht/aufgabe03)
 - [**Mittel**](aufgaben-mittel/)
   - Noch keine Vorhanden
 - [**Schwer**](aufgaben-schwer/)
