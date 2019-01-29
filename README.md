@@ -12,4 +12,4 @@
 - [**Mittel**](aufgaben-mittel/)
   - Noch keine Vorhanden
 - [**Schwer**](aufgaben-schwer/)
-  - Noch nicht vorhanden
+  - [Chat Room](aufgaben-schwer/aufgabe01)
