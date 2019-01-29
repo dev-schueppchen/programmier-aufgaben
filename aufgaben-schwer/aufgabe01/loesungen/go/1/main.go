@@ -1,5 +1,6 @@
 package main
 
 func main() {
-	StartHTTPServer("8080")
+	LogInf.Println("Starting web server...")
+	LogFtl.Println("Failed starting web service: ", StartHTTPServer("8080"))
 }

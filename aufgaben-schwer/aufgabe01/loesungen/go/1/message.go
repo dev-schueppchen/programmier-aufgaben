@@ -18,6 +18,8 @@ type messageEvent struct {
 	Data *Message `json:"data"`
 }
 
+// NewMessageFromEvent creates a new message object
+// from an event object.
 func NewMessageFromEvent(e *Event) (*Message, error) {
 	raw, err := e.Raw()
 	if err != nil {
@@ -36,6 +38,8 @@ func NewMessageFromEvent(e *Event) (*Message, error) {
 	return msgEvent.Data, nil
 }
 
+// Raw returns the raw JSON formatted data
+// of an message object as byte array.
 func (m *Message) Raw() ([]byte, error) {
 	return json.Marshal(m)
 }
