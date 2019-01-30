@@ -7,6 +7,8 @@
 ## Inhalt:
 - [**Leicht**](aufgaben-leicht)
   - [Login](aufgaben-leicht/aufgabe01)
+  - [Zahlen raten](aufgaben-leicht/aufgabe02)
+  - [Trivia-Quiz](aufgaben-leicht/aufgabe03)
   - [Towerdrop](aufgaben-leicht/aufgabe04)
 - [**Mittel**](aufgaben-mittel)
   - Noch keine Vorhanden
