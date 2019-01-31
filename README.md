@@ -12,5 +12,5 @@
   - [Towerdrop](aufgaben-leicht/aufgabe04)
 - [**Mittel**](aufgaben-mittel/)
   - Noch keine Vorhanden
-- [**Schwer**](aufgaben-schwer)
-  - Noch nicht vorhanden
+- [**Schwer**](aufgaben-schwer/)
+  - [Chat Room](aufgaben-schwer/aufgabe01)
