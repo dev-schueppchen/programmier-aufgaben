@@ -45,6 +45,10 @@ func NewWebSocketConn(w http.ResponseWriter, r *http.Request, onClosed func(*Web
 		onClosed: onClosed,
 	}
 
+	// Reader and writer needs to be started in
+	// seperate go routines ("threads"), because they
+	// block their current thread until receiving
+	// or writing a message.
 	go wsc.reader()
 	go wsc.writer()
 
@@ -60,9 +64,14 @@ func NewWebSocketConn(w http.ResponseWriter, r *http.Request, onClosed func(*Web
 func (wsc *WebSocketConn) reader() {
 	defer wsc.conn.Close()
 
+	// Creating "infinite" loop.
 	for {
+		// This blocks until ReadMessage() receives a message
+		// on the web socket input.
 		_, msg, err := wsc.conn.ReadMessage()
 		if err != nil {
+			// If any close message was send, the onClosed handler will be called, if defined
+			// and the loop will break.
 			if websocket.IsUnexpectedCloseError(err, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
 				LogInf.Println("[ WS ] closed: ", err)
 				if wsc.onClosed != nil {
@@ -72,6 +81,7 @@ func (wsc *WebSocketConn) reader() {
 			break
 		}
 
+		// Creating message event object from raw message data.
 		event, err := NewEventFromRaw(msg)
 		if err != nil {
 			LogErr.Println("[ WS ] Error parsing received message: ", err)
@@ -80,6 +90,8 @@ func (wsc *WebSocketConn) reader() {
 
 		LogDbg.Printf("[ WS ] Received message: {name: %s, data: %v}\n", event.Name, event.Data)
 
+		// Searching for event registration of the event name
+		// and execute the corresponding handler, if defined.
 		if handler, ok := wsc.events[event.Name]; ok {
 			handler(event)
 		}
@@ -90,23 +102,29 @@ func (wsc *WebSocketConn) reader() {
 // until a new message enters the out channel. After,
 // the message will be send to the connected client.
 func (wsc *WebSocketConn) writer() {
+	// Creating "infinite" loop.
 	for {
-		select {
-		case msg, ok := <-wsc.out:
-			if !ok {
-				wsc.conn.WriteMessage(websocket.CloseMessage, nil)
-				return
-			}
-
-			w, err := wsc.conn.NextWriter(websocket.TextMessage)
-			if err != nil {
-				LogErr.Println("[ WS ] Failed getting next writer for sending message: ", err)
-				return
-			}
-
-			w.Write(msg)
-			w.Close()
+		// Block and listen for incomming messages
+		// in web socket connections out channel,
+		// which are dedicated to be sent to the
+		// web socket client.
+		msg, ok := <-wsc.out
+		if !ok {
+			wsc.conn.WriteMessage(websocket.CloseMessage, nil)
+			return
 		}
+
+		// Getting the writer and specify the message type
+		// as text message.
+		w, err := wsc.conn.NextWriter(websocket.TextMessage)
+		if err != nil {
+			LogErr.Println("[ WS ] Failed getting next writer for sending message: ", err)
+			return
+		}
+
+		// Write the message data to the writer and close after.
+		w.Write(msg)
+		w.Close()
 	}
 }
 
@@ -128,16 +146,14 @@ func (wsc *WebSocketConn) Send(name string, data interface{}) error {
 		Data: data,
 	}
 
+	// Get raw JSON data from event object.
 	raw, err := event.Raw()
 	if err != nil {
 		return err
 	}
 
-	LogDbg.Println(string(raw))
-
-	go func() {
-		wsc.out <- raw
-	}()
+	// Send data into web socket connections out channel.
+	wsc.out <- raw
 
 	return nil
 }

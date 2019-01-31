@@ -26,6 +26,7 @@ func NewMessageFromEvent(e *Event) (*Message, error) {
 		return nil, err
 	}
 
+	// Parsing JSON data to messageEvent object
 	msgEvent := new(messageEvent)
 	err = json.Unmarshal(raw, msgEvent)
 	if err != nil {
@@ -35,6 +36,7 @@ func NewMessageFromEvent(e *Event) (*Message, error) {
 		return nil, errors.New("empty message")
 	}
 
+	// returning the actual message object
 	return msgEvent.Data, nil
 }
 

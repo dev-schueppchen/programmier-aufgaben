@@ -43,6 +43,7 @@ func StartHTTPServer(port string) error {
 				return
 			}
 
+			// Broadcast the received and message object to all connected clients.
 			httpServer.ws.Broadcast("message", msg, func(wsc *WebSocketConn, err error) {
 				LogErr.Printf("[ WS ] Failed sending message event to %s: %v\n", wsc.conn.LocalAddr().String(), err)
 			})
