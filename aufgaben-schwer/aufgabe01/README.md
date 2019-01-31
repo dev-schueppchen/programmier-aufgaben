@@ -1,6 +1,6 @@
 # Aufgabe 01
 > Contributors: zekro#9131  
-> Letzte Aktualisierung:  2019/01/29
+> Letzte Aktualisierung:  2019/01/31
 
 ---
 
@@ -13,7 +13,7 @@ Erstelle einen Web-Service, welcher z.b. über `localhost:8080` im Browser errei
 Voraussetzungen:
 - Eingehende Messages müssen erscheinen ohne dass man die Website neu laden muss
 - Nickname, Text und der Zeitstempel müssen an alle verbundenen Clients gesendet werden
-- Es dürfen externe Libraries verwendet werden
+- Es dürfen externe Libraries *(z.B. express, gorilla/websocket, flask, websocket-client...)* verwendet werden
 
 ---
 
