@@ -35,6 +35,6 @@ Der Einfachheit halber musst du dich nicht um grammatische Richtigkeit in den Au
 deines Programmes kümmern. ;)
 
 **Hinweise:**
-- Du musst in deinem Programm einfache Methoden verwenden.
+- Du musst in deinem Programm einfache Funktionen verwenden.
 - Dein Ball erreicht vielleicht in 5 Sekunden nicht den Boden. Das ist in Ordnung.
 - Schleifen werden nicht zwingend vorrausgesetzt.
