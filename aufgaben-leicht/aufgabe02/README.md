@@ -1,6 +1,6 @@
 # Aufgabe 02
-> Contributors: RMC#0001 
-> Letzte Aktualisierung:  2019/01/26
+> Contributors: RMC#0001, Kaktushose#0436   
+> Letzte Aktualisierung:  2019/10/03
 
 ---
 
@@ -22,3 +22,4 @@ Voraussetzungen:
 ## Musterlösungen
 
 - [Python](loesungen/python/python.py)
+- [Java](loesungen/java/Main.java)

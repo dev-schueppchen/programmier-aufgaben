@@ -1,6 +1,6 @@
 # Aufgabe 01
-> Contributors: Ron31#2338, zekro#9131  
-> Letzte Aktualisierung:  2019/01/24
+> Contributors: Ron31#2338, zekro#9131, Kaktushose#0436  
+> Letzte Aktualisierung:  2019/10/03
 
 ---
 
@@ -18,3 +18,4 @@ Voraussetzungen:
 
 - [Python](loesungen/python/1.py)
 - [C++](loesungen/cpp)
+- [Java](loesungen/java/Main.java)
