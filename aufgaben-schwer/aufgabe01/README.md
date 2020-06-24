@@ -1,6 +1,6 @@
 # Aufgabe 01
-> Contributors: zekro#9131  
-> Letzte Aktualisierung:  2019/01/31
+> Contributors: zekro#9131, Ron31#2338
+> Letzte Aktualisierung:  2020/06/24
 
 ---
 
@@ -20,3 +20,4 @@ Voraussetzungen:
 ## Musterlösungen
 
 - [Go](loesungen/go)
+- [NodeJS](loesungen/js)
