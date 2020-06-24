@@ -1,7 +1,6 @@
 const express = require('express');
 const WebSocket = require('ws');
 const app = express();
-// const server = require('http').createServer(app)
 const wss = new WebSocket.Server({ port: 1337 });
 
 
@@ -9,7 +8,6 @@ const wss = new WebSocket.Server({ port: 1337 });
 
 wss.on('connection', ws => {
     ws.on('message', (data) => {
-        console.log(data)
         try {
             var json = JSON.parse(data)
             if (json.username == "" || json.content == "") return ws.send("")
