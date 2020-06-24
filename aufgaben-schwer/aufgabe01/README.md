@@ -1,5 +1,5 @@
 # Aufgabe 01
-> Contributors: zekro#9131, Ron31#2338
+> Contributors: zekro#9131, Ron31#2338    
 > Letzte Aktualisierung:  2020/06/24
 
 ---
