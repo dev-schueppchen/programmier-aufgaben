@@ -1,4 +1,4 @@
-# Aufgabe 04
+# Aufgabe 05
 
 > Contributors: Kokosnuss.exe#1478  
 > Letzte Aktualisierung: 2020/09/26
@@ -9,20 +9,20 @@
 
 ### Schritt 1
 
-Erstelle eine Funktion mit einem Input `n`. `n` spiegelt die n-te Fibonacci zahl wieder.
+Erstelle eine Funktion mit einem Input `n`. `n` spiegelt die n-te Fibonaccizahl wieder.
 
 <details>
 <summary><b>Gegentest</b></summary>
 Wenn <pre>n = 10</pre>
 dann
 <pre>
-55
+34
 </pre>
 </details>
 
 ### Schritt 2
 
-Erstelle eine Schleife oder Funktion, welche die ersten 50 Fibonacci Zahlen ausgibt. *Optional mit Input*
+Erstelle eine Schleife oder Funktion, welche die ersten 50 Fibonaccizahlen ausgibt. *Optional mit Input*
 
 <details>
 <summary><b>Gegentest</b></summary>
