@@ -10,6 +10,7 @@
   - [Zahlen raten](aufgaben-leicht/aufgabe02)
   - [Trivia-Quiz](aufgaben-leicht/aufgabe03)
   - [Towerdrop](aufgaben-leicht/aufgabe04)
+  - [Fibonacci](aufgaben-leicht/aufgabe05)
 - [**Mittel**](aufgaben-mittel/)
   - Noch keine Vorhanden
 - [**Schwer**](aufgaben-schwer/)
