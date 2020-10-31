@@ -12,6 +12,6 @@
   - [Towerdrop](aufgaben-leicht/aufgabe04)
   - [Fibonacci](aufgaben-leicht/aufgabe05)
 - [**Mittel**](aufgaben-mittel/)
-  - Noch keine Vorhanden
+  - [Primfaktorzerlegung](aufgaben-mittel/aufgabe01)
 - [**Schwer**](aufgaben-schwer/)
   - [Chat Room](aufgaben-schwer/aufgabe01)
