@@ -1,6 +1,6 @@
-# Aufgabe 02
-> Contributors: RMC#0001, Kaktushose#0436   
-> Letzte Aktualisierung:  2019/10/03
+# Task 02
+> Contributors: Voxain#0001, Kaktushose#0436
+> Last update:  2019/10/03
 
 ---
 
