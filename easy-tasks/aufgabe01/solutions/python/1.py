@@ -7,6 +7,6 @@ print('Password:')
 password = input()
 
 if (password == userpws.get(user)):
-    print('Du bist nun eingeloggt')
+    print('You are now logged in')
 else:
-    print('Falsches Passwort')
+    print('Wrong password')
