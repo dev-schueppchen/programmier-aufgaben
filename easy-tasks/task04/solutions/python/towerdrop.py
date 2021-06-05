@@ -7,7 +7,7 @@ GRAVITY = 9.8
 
 def get_tower_height():
     """Gets the tower height from the user and returns it."""
-    tower_height = input('Bitte gib die Höhe des Turmes in Metern ein: ')
+    tower_height = input('Please enter the height of the tower in metres: ')
     return float(tower_height)
 
 
@@ -23,9 +23,9 @@ def calculate_height(tower_height, seconds):
 def print_height(height, seconds):
     """Prints the height every second until the ball has reached the ground."""
     if height > 0.0:
-        print(f'Nach {seconds} Sekunden ist der Ball auf {height} Metern Höhe.')
+        print(f'After {seconds} seconds, the ball is at {height} metres.')
     else:
-        print(f'Nach {seconds} Sekunden ist der Ball bereits auf dem Boden aufgeschlagen.')
+        print(f'After {seconds} seconds, the ball has already hit the ground.')
 
 
 def calculate_and_print_height(tower_height, seconds):

@@ -1,40 +1,43 @@
-# Aufgabe 04
+# Task 04
 
 > Contributors: Vale#5252  
-> Letzte Aktualisierung: 2019/01/24
+> Last update: 2019/01/24
 
 ---
 
 ## Towerdrop
 
-Diese Aufgabe ist vielleicht etwas anspruchsvoller. Hier geht es darum, eine Simulation
-zu programmieren. Und zwar legt der Nutzer zuerst eine Höhe für einen Turm fest. Von diesem
-Turm wird dann ein Ball hinuntergeworfen. Wir gehen von normaler Fallbeschleunigung (9.8 m/s²),
-sowie davon, dass der Ball keine Anfangsgeschwindigkeit besitzt, aus. Dein Programm sollte
-anschließend die Höhe des Balles über dem Boden nach 0, 1, 2, 3, 4 und 5 Sekunden ausgeben.
+This task is maybe a little more challenging. This is about programming a simulation. First of all, the user sets a height for a tower. From this a tower, a ball is then thrown down. We assume normal gravitational acceleration (9.81 m/s²) and that the ball has no initial velocity. Your program should
+then output the height of the ball above the ground after 0, 1, 2, 3, 4 and 5 seconds.
 
-**Beachte:** Der Ball sollte niemals "in" den Boden fallen. Bei Höhe 0 ist Schluss.
+**Keep in mind:** The ball should never fall "into" the ground. The end is at height 0.
 
-Definiere eine Konstante, welchen den Wert der Fallbeschleunigung (9.8) speichert.
-Um zu berechnen, wie viele Meter der Ball nach x Sekunden gefallen ist, kannst du die Formel
-`gefallene_distanz = fallbeschleunigung * x_sekunden² / 2` verwenden.
+Define a constant that stores the value of the gravitational acceleration (9.81).
+To calculate how many metres the ball has fallen after x seconds, you can use the formula
+`fall_distance = gravitational_acceleration * x_seconds² / 2`.
 
-Ein Beispiel für die Ausgabe:
+An example of the output:
 
 ```
-Bitte gib die Höhe des Turmes in Metern ein: 100
-Nach 0 Sekunden ist der Ball auf 100 Metern Höhe.
-Nach 1 Sekunden ist der Ball auf 95.1 Metern Höhe.
-Nach 2 Sekunden ist der Ball auf 80.4 Metern Höhe.
-Nach 3 Sekunden ist der Ball auf 55.9 Metern Höhe.
-Nach 4 Sekunden ist der Ball auf 21.6 Metern Höhe.
-Nach 5 Sekunden ist der Ball bereits auf dem Boden aufgeschlagen.
+Please enter the height of the tower in metres: 100
+After 0 seconds, the ball is at 100 metres.
+After 1 second, the ball is at 95.1 metres.
+After 2 seconds, the ball is at 80.4 metres.
+After 3 seconds, the ball is at 55.9 metres.
+After 4 seconds, the ball is at 21.6 metres.
+After 5 seconds, the ball has already hit the ground.
 ```
 
-Der Einfachheit halber musst du dich nicht um grammatische Richtigkeit in den Ausgaben
-deines Programmes kümmern. ;)
+**Hints:**
 
-**Hinweise:**
-- Du musst in deinem Programm einfache Funktionen verwenden.
-- Dein Ball erreicht vielleicht in 5 Sekunden nicht den Boden. Das ist in Ordnung.
-- Schleifen werden nicht zwingend vorrausgesetzt.
+-   You must use simple functions in your programm.
+-   Your ball may not reach the ground in 5 seconds. That's fine.
+-   Loops are not a mandatory requirement.
+
+---
+
+## Sample solutions
+
+-   [C++](solutions/cpp/towerdrop.cpp)
+-   [Java](solutions/java/TowerDrop.java)
+-   [Python](solutions/python/towerdrop.py)

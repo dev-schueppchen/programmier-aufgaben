@@ -13,7 +13,7 @@ class Main {
      */
     public static double getTowerHeight() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Gib die Hoehe in Metern ein: ");
+        System.out.print("Please enter the height of the tower in metres: ");
         double towerHeight = scanner.nextDouble();
         scanner.close();
 
@@ -35,9 +35,9 @@ class Main {
      */
     private static void printHeight(double height, int seconds) {
         if (height > 0.0)
-            System.out.println(String.format("Nach %d Sekunden ist der Ball auf %.1f Metern H▒he.", seconds, height));
+            System.out.println(String.format("After %d seconds, the ball is at %.1f metres.", seconds, height));
         else
-            System.out.println(String.format("Nach %d Sekunden ist der Ball bereits auf dem Boden aufgeschlagen.", seconds));
+            System.out.println(String.format("After %d seconds, the ball has already hit the ground.", seconds));
     }
 
     private static void calculateAndPrintHeight(double towerHeight, int seconds) {

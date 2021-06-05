@@ -5,7 +5,7 @@ const float gravity = 9.8;
 /// Gets the tower height from the user and returns it.
 double getTowerHeight()
 {
-    std::cout << "Bitte gib die Höhe des Turmes in Metern ein: ";
+    std::cout << "Please enter the height of the tower in metres: ";
     double towerHeight;
     std::cin >> towerHeight;
     return towerHeight;
@@ -25,9 +25,9 @@ double calculateHeight(double towerHeight, int seconds)
 void printHeight(double height, int seconds)
 {
     if (height > 0.0)
-        std::cout << "Nach " << seconds << " Sekunden ist der Ball auf " << height << " Metern Höhe.\n";
+        std::cout << "After " << seconds << " seconds, the ball is at " << height << " metres.\n";
     else
-        std::cout << "Nach " << seconds << " Sekunden ist der Ball bereits auf dem Boden aufgeschlagen.\n";
+        std::cout << "After " << seconds << " seconds, the ball has already hit the ground.\n";
 }
 
 void calculateAndPrintHeight(double towerHeight, int seconds)
