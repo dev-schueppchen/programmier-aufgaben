@@ -12,5 +12,5 @@ def prime_factorizing(num):
         current /= dividend
     return factors
 
-input = int(input('Zahl: '))
-print(input, 'in prime is ', prime_factorizing(input))
+input = int(input('Number: '))
+print(input, 'as prime factors is ', prime_factorizing(input))

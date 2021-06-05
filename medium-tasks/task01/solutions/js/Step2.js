@@ -1,4 +1,4 @@
-const { getSmallestDivident } = require('./Schritt1');
+const { getSmallestDivident } = require('./Step1');
 
 const input = 1000;
 
