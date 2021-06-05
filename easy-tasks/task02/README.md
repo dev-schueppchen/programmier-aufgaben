@@ -13,7 +13,7 @@ Conditions:
 - The number of attempts is set in advance
 - After a successful guess of the number or the remaining attempts have been used, nothing more should happen except for a corresponding message to be send.
 
-**Extra task**
+### Additional tasks
 - You can choose the range in which the generated number lies
 - After a certain number of attempts you get a hint. Examples of a hint: *The number is between x and y.*
 
