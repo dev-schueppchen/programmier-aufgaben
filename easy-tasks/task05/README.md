@@ -1,31 +1,31 @@
-# Aufgabe 05
+# Task 05
 
 > Contributors: Kokosnuss.exe#1478  
-> Letzte Aktualisierung: 2020/09/26
+> Last update: 2020/09/26
 
 ---
 
 ## Fibonacci
 
-### Schritt 1
+### Step 1
 
-Erstelle eine Funktion mit einem Input `n`. `n` spiegelt die n-te Fibonaccizahl wieder.
+Create a function with an input `n`. `n` represents the nth Fibonacci number.
 
 <details>
-<summary><b>Gegentest</b></summary>
-Wenn <pre>n = 10</pre>
-dann
+<summary><b>Countertest</b></summary>
+If <pre>n = 10</pre>
+then
 <pre>
 34
 </pre>
 </details>
 
-### Schritt 2
+### Step 2
 
-Erstelle eine Schleife oder Funktion, welche die ersten 50 Fibonaccizahlen ausgibt. *Optional mit Input*
+Create a loop or function that outputs the first 50 Fibonacci numbers. *Optionally with input*
 
 <details>
-<summary><b>Gegentest</b></summary>
+<summary><b>Countertest</b></summary>
 <pre>
 0
 1
@@ -80,11 +80,11 @@ Erstelle eine Schleife oder Funktion, welche die ersten 50 Fibonaccizahlen ausgi
 </pre>
 </details>
 
-**Tipp**
-Nutze eine Art Cache um nicht rekursiv arbeiten zu müssen
+**Tip**
+Use some kind of cache to avoid having to work recursively.
 
 ---
 
-## Musterlösungen
+## Sample solutions
 
-- [NodeJS](loesungen/js)
+- [NodeJS](solutions/js)
