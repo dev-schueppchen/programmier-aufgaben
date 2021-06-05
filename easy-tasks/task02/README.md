@@ -4,22 +4,22 @@
 
 ---
 
-## Zahlen Raten
+## Numbers guessing
 
-Das Programm soll eine Zufällige Zahl, zunächst von 1 bis 100, generieren. Danach wird der Spieler zur Eingabe aufgefordert: Er soll di Zahl nun erraten. Gibt er eine zu hohe oder zu niedrige Zahl an, wird eine entsprechende Meldung ausgegeben. Ist die Zahl erraten, gibt da Programm dies aus und beendet sich selbst.
-Errät man die Zahl nicht, soll auch nach 10 Versuchen das Programm beendet werden.
+The programm should generate a random number, initially from 1 to 100. Then the player is prompted to enter: He should now guess the number. If he enters a number that is too high or too low, a corresponding message is shown. If the rigth number is guessed, the programm outputs this and exits.
+If the number is not guessed, the programm should also be terminated after 10 attempts.
 
-Voraussetzungen:
-- Die Anzahl der Versuche ist vorab festgelegt
-- Nach einem erfolgreichen erraten der Zahl oder aber dem Verlust aller verbleibenden Versuche soll außer einer entspr. Meldung nichts mehr passieren
+Conditions:
+- The number of attempts is set in advance
+- After a successful guess of the number or the remaining attempts have been used, nothing more should happen except for a corresponding message to be send.
 
-**Zusatzaufgaben**
-- Den Bereich, in dem die generierte Zahl liegt, kann man sich aussuchen
-- Nach einer bestimmten Anzahl an Versuchen bekommt man einen Tipp. Beispiele für Tipps: *Die Zahl liegt zwischen x und y.*
+**Extra task**
+- You can choose the range in which the generated number lies
+- After a certain number of attempts you get a hint. Examples of a hint: *The number is between x and y.*
 
 ---
 
-## Musterlösungen
+## Sample solutions
 
-- [Python](loesungen/python/python.py)
-- [Java](loesungen/java/Main.java)
+- [Python](solutions/python/python.py)
+- [Java](solutions/java/Main.java)
