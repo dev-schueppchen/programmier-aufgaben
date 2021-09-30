@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom</title>
+</head>
+<body>
+    <input placeholder="nick" id="username">
+    <input placeholder="text" id="content">
+    <button onclick="send()">send</button></br>
+    <p id="text">
+
+    </p>
+</body>
+</html>
+<script>
+    var ws = new WebSocket("ws://localhost:1337")
+    ws.onmessage = data => {
+        document.getElementById('text').innerText += `${data.data}\n`
+    }
+    function send() {
+        var json = {
+            "username": document.getElementById('username').value,
+            "content": document.getElementById('content').value
+        }
+        ws.send(JSON.stringify(json))
+    }
+</script>
